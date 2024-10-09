@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #5b7378;
+      }
+
+      /*styling of main links*/
+      a:link {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px;
+      }
+
+      a:hover {
+        color: #1d1b1b;
+        background-color: #eae1e1;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: none;
+      }
+
+      a:active {
+        color: none;
+      }
+
+      .more {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown {
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        /* width: 100%; */
+        z-index: 1;
+        color: black;
+      }
+
+      .more:hover .dropdown {
+        display: block;
+      }
+
+      h3 {
+        text-align: center;
+        margin-top: 20px;
+        color: #000000b6;
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: lighter;
+      }
+
+      h4 {
+        color: #9591918f;
+        text-align: center;
+        margin-bottom: 30px;
+        font-style: italic;
+        font-weight: lighter;
+      }
+
+      #message {
+        width: 500px;
+      }
+
+      input {
+        padding: 7px;
+      }
+
+      #send {
+        background-color: black;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        padding: 10px 15px;
+      }
+
+      #send:hover {
+        background-color: #9f9a93;
+        color: #000;
+      }
+
+      .classify {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .hori {
+        display: grid;
+        grid-template-rows: auto auto auto;
+      }
+
+      .final {
+        width: 70%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigate">
+      <a href="#">HOME</a>
+      <a href="band.html">BAND</a>
+      <a href="tour.html">TOUR</a>
+      <a href="contact.html">CONTACT</a>
+      <div class="more">
+        <a href="#">MORE</a>
+        <div class="dropdown">
+          <a href="#">Merchandise</a>
+          <a href="#">Media</a>
+          <a href="#">Extras</a>
+        </div>
+      </div>
+    </div>
+    <h3>CONTACT</h3>
+    <h4>Fan? Drop a note!</h4>
+    <div class="final">
+      <div class="classify">
+        <div class="hori">
+          <p>Chicago, US</p>
+          <p>Phone: +00 146281</p>
+          <p>Email: isaacolayiwola83@gmail.com</p>
+        </div>
+        <br />
+
+        <form>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="Email" placeholder="Email" />
+          <br />
+          <br />
+          <input
+            type="text"
+            name="message"
+            placeholder="message"
+            id="message"
+          />
+          <br />
+          <br />
+          <input type="submit" name="send" value="SEND" id="send" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

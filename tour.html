@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tour</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: #000;
+      }
+
+      .navigate {
+        background-color: #000;
+        margin-bottom: 30px;
+      }
+
+      /*styling of main links*/
+      a:link {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px;
+      }
+
+      a:hover {
+        color: #1d1b1b;
+        background-color: #eae1e1;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: none;
+      }
+
+      a:active {
+        color: none;
+      }
+
+      .more {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown {
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        /* width: 100%; */
+        z-index: 1;
+        color: black;
+      }
+
+      .more:hover .dropdown {
+        display: block;
+      }
+
+      .information {
+        background-color: #000;
+      }
+      h2 {
+        text-align: center;
+        color: #fff;
+        font-style: oblique;
+        text-shadow: 2px 2px 5px #1098ad;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        text-align: center;
+        font-style: italic;
+        color: #beb4b4;
+        margin-bottom: 30px;
+      }
+
+      .listitemclass {
+        width: 70%;
+        margin: 0 auto;
+        color: #858585;
+        border-bottom: 2px solid #cecece;
+        padding: 0;
+        background-color: #f5f5f5ff;
+        margin-bottom: 30px;
+      }
+
+      .listitemclass li {
+        list-style: none;
+        border-bottom: 2px solid #cecece;
+        height: auto;
+        padding: 10px;
+      }
+
+      #first::after {
+        content: "SOLD OUT";
+        position: absolute;
+        display: inline-block;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        left: 100px;
+        top: 10px;
+      }
+
+      #first {
+        position: relative;
+      }
+
+      li:nth-child(3) {
+        position: relative;
+      }
+
+      li:nth-child(3)::after {
+        content: "3";
+        position: absolute;
+        display: inline-block;
+        background-color: #050404;
+        border-radius: 50%;
+        right: 30px;
+        padding: 5px 8px;
+        top: 5px;
+        color: white;
+      }
+
+      .tourcountries {
+        background-color: #fff;
+      }
+
+      img {
+        width: 300px;
+        height: auto;
+        opacity: 1;
+      }
+
+      img:hover {
+        opacity: 0.5;
+      }
+
+      .info {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+
+      .ticket {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        padding: 8px;
+        border: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .ticket:hover {
+        background-color: #beb4b4;
+        color: black;
+      }
+
+      /* p {
+        text-align: justify;
+      } */
+
+      .city {
+        color: #000000;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .tourdates {
+        color: #000000b4;
+        margin-bottom: 10px;
+      }
+
+      .central {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navigate">
+      <a href="#">HOME</a>
+      <a href="band.html">BAND</a>
+      <a href="tour.html">TOUR</a>
+      <a href="contact.html">CONTACT</a>
+      <div class="more">
+        <a href="#">MORE</a>
+        <div class="dropdown">
+          <a href="#">Merchandise</a>
+          <a href="#">Media</a>
+          <a href="#">Extras</a>
+        </div>
+      </div>
+    </div>
+    <article class="information">
+      <h2>TOUR DATES</h2>
+      <h3>Book your tickets now!!!</h3>
+
+      <ul class="listitemclass">
+        <li id="first">March</li>
+        <li>April</li>
+        <li>May</li>
+      </ul>
+      <div class="info">
+        <div class="tourcountries">
+          <img src="newyork.jpg" alt="newyork" />
+          <div class="central">
+            <p class="city">New york</p>
+            <p class="tourdates">Fri 27 Nov 2023</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="ticket">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="tourcountries">
+          <img src="paris.jpg" alt="paris" />
+          <div class="central">
+            <p class="city">Paris</p>
+            <p class="tourdates">Fri 28 Nov 2023</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="ticket">Buy Tickets</button>
+          </div>
+        </div>
+
+        <div class="tourcountries">
+          <img src="sanfran.jpg" alt="sanfran" />
+          <div class="central">
+            <p class="city">San francisco</p>
+            <p class="tourdates">Fri 27 Nov 2023</p>
+            <p>Quo, debitis. Reprehenderit eum expedita laudantium at.</p>
+            <button class="ticket">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAND</title>
+    <style>
+      body {
+        font-style: sans-serif;
+      }
+
+      .navigate {
+        background-color: #000;
+      }
+
+      /*styling of main links*/
+      a:link {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px;
+      }
+
+      a:hover {
+        color: #1d1b1b;
+        background-color: #eae1e1;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: none;
+      }
+
+      a:active {
+        color: none;
+      }
+
+      .more {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown {
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        /* width: 100%; */
+        z-index: 1;
+        color: black;
+      }
+
+      .more:hover .dropdown {
+        display: block;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: lighter;
+        margin-top: 30px;
+      }
+
+      h3 {
+        text-align: center;
+        font-style: italic;
+        color: #5b5252;
+        font-size: 20px;
+      }
+
+      #about {
+        text-align: center;
+        /* text-align: justify; */
+        width: 70%;
+        margin: 0 auto;
+        text-align: justify;
+      }
+
+      .arrange {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      img {
+        opacity: 0.5;
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      img:hover {
+        opacity: 1;
+        width: 250px;
+      }
+
+      .artist {
+        color: #1098ad;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigate">
+      <a href="thesoundband.html">HOME</a>
+      <a href="band.html">BAND</a>
+      <a href="tour.html">TOUR</a>
+      <a href="contact.html">CONTACT</a>
+      <div class="more">
+        <a href="#">MORE</a>
+        <div class="dropdown">
+          <a href="#">Merchandise</a>
+          <a href="#">Media</a>
+          <a href="#">Extras</a>
+        </div>
+      </div>
+    </div>
+    <h2>THE BAND</h2>
+    <h3>We love music</h3>
+    <p id="about">
+      About the soundband: Lorem ipsum dolor, sit amet consectetur adipisicing
+      elit. Ea sit ab libero alias, minus dignissimos quas illum atque,
+      repudiandae rem ipsum nam voluptatem cum earum non iusto, numquam eos
+      soluta, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+      cum, corrupti tempore blanditiis mollitia aspernatur corporis molestias
+      voluptatem nihil eius dignissimos consectetur ut temporibus? Ea, veniam?
+      Fugiat veritatis officiis magnam?
+    </p>
+    <div class="arrange">
+      <div>
+        <p class="artist">Dave cubes</p>
+        <img src="bandmember.jpg" alt="bandmember" />
+      </div>
+      <div>
+        <p class="artist">Larry hanson</p>
+        <img src="bandmember.jpg" alt="bandmember" />
+      </div>
+      <div>
+        <p class="artist">Richard Kane</p>
+        <img src="bandmember.jpg" alt="bandmember" />
+      </div>
+    </div>
+  </body>
+</html>
